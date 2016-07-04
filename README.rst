@@ -9,8 +9,10 @@ Usage
 The main utility is the ``yacluster.cluster`` function which takes two arguments:
 
 * an iterable which yields two-element point tuples, each containing:
-  - a two-element tuple with X and Y coordinates;
+
+  - a two-element tuple with X and Y coordinates,
   - the actual object being clustered (or its identifier);
+
 * a distance threshold; if a point is included into a cluster, it must be closer to its centroid than this value.
 
 The function returns an iterable of two-element cluster tuples, each containing:
